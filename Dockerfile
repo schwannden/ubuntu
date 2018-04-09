@@ -6,7 +6,7 @@ ENV SBT_HOME=/usr/share/sbt/bin/
 ENV PATH $JAVA_HOME/bin:$SBT_HOME/bin:$PATH
 
 RUN apt-get update \
-    && apt-get install -y git vim wget curl tree htop apt-transport-https unzip curl \
+    && apt-get install -y git vim wget curl tree htop apt-transport-https unzip curl tmux \
     && apt-get install -y zsh \
     && git clone --depth 1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh \
     && cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc \
